@@ -5,7 +5,7 @@ char={}
 
 # 각 문자에 대한 index 저장
 for i in range(len(s)):
-    char[s[i]]=char.get(s[i])+[i]
+    char[s[i]]=char.get(s[i],[])+[i]
 
 print(char)
 
