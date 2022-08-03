@@ -6,12 +6,12 @@ def bfs(n):
     q.append(n)
     while q:
         t= q.popleft()
-        print(t)
+        
         if t ==k: # 결과에 도달시
             print(graph[t])
             break
-        for nt in (t-1, t+1, t *2):
-            if 0 <= nt <= (10 **5) and graph[nt]==0:
+        for nt in (t-1, t+1, t *2): # 가짓수점검
+            if 0 <= nt <= (10 **5) and graph[nt]==0: # 범위확인
                 graph[nt] = graph[t] + 1
                 q.append(nt)
 
