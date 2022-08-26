@@ -6,7 +6,7 @@ coin = [int(sys.stdin.readline()) for i in range(n)] # 코인초기화
 
 dp = [0] * (k+1)
 
-
+#print(coin)
 
 
 for i in range(1, k+1):
